@@ -1,0 +1,183 @@
+
+<!--- Jake McMillan 2108868 --->
+
+<html>
+    <head>
+        <link rel = "stylesheet" href = "style/groupprojectstylesheet.css" type = "text/css">
+        <title>Events</title>
+    </head>
+
+    <body>
+        
+        <!--- JavaScript Functions --->
+
+        <script>
+            function showEvent(month){
+                var x = month
+                x.style.display = "block";
+            }
+
+            function hideEvent(month){
+                var x = month
+                x.style.display = "none";
+            }
+        </script>
+
+        <!--- Navigation bar - Links to webpages by other group members --->
+
+        <nav>
+            <ul>
+                <a href = "index.html"> <li class = "navBarElements" >Home</li></a>
+                <a href = "shop.html"> <li class = "navBarElements">Shop</li></a>
+                <a href = "portfolio.html"> <li class = "navBarElements">Our Portfolio</li></a>
+                <a href = "gallery.html"> <li class = "navBarElements">Gallery</li></a>
+                <a href = "contact.html"> <li class = "navBarElements">Contact Us</li></a>
+            </ul> 
+        </nav>
+
+        <!--- Title --->
+
+        <br>
+
+        <div class = "title">
+            <h1>SOCIETY EVENTS</h1>
+        </div>
+
+        <br>
+
+        <!--- Event Table --->
+
+        <div id = "leftContainer">
+            <table>
+                <tr class = "tableText">
+                  <th>Month</th>
+                  <th>Events</th>
+                </tr>
+
+                <tr class = "tableText">
+                  <td>January</td>
+                  <td><mark>Form Groups</mark></td>
+                </tr>
+
+                <tr class = "tableText">
+                    <td>February</td>
+                    <td><mark>Mock-up Due</mark></td>
+                </tr>
+
+                <tr class = "tableText">
+                    <td>March</td>
+                    <td><mark>Break</mark></td>
+                </tr>
+
+                <tr class = "tableText">
+                    <td>April</td>
+                    <td><mark>Implementation Due</mark></td>
+                </tr>
+
+                <tr class = "tableText">
+                    <td>May</td>
+                    <td>No events planned</td>
+                </tr>
+
+                <tr class = "tableText">
+                    <td>June</td>
+                    <td>No events planned</td>
+                </tr>
+
+                <tr class = "tableText">
+                    <td>July</td>
+                    <td>No events planned</td>
+                </tr>
+
+                <tr class = "tableText">
+                    <td>August</td>
+                    <td>No events planned</td>
+                </tr>
+
+                <tr class = "tableText">
+                    <td>September</td>
+                    <td>No events planned</td>
+                </tr>
+
+                <tr class = "tableText">
+                    <td>October</td>
+                    <td>No events planned</td>
+                </tr>
+
+                <tr class = "tableText">
+                    <td>November</td>
+                    <td>No events planned</td>
+                </tr>
+
+                <tr class = "tableText">
+                    <td>December</td>
+                    <td>No events planned</td>
+                </tr>
+            </table>
+
+            <!--- Month Columns --->
+
+            <ul>
+                <li class = "leftContainerText" onmouseover = "showEvent(eventsInJanuary)" onmouseout = "hideEvent(eventsInJanuary)"><mark>More information about events in January</mark></li>
+                <li class = "leftContainerText" onmouseover = "showEvent(eventsInFebruary)" onmouseout = "hideEvent(eventsInFebruary)"><mark>More information about events in February</mark></li>
+                <li class = "leftContainerText" onmouseover = "showEvent(eventsInMarch)" onmouseout = "hideEvent(eventsInMarch)"><mark>More information about events in March</mark></li>
+                <li class = "leftContainerText" onmouseover = "showEvent(eventsInApril)" onmouseout = "hideEvent(eventsInApril)"><mark>More information about events in April</mark></li>
+                <li class = "leftContainerText" onmouseover = "showEvent(anyOtherMonth)" onmouseout = "hideEvent(anyOtherMonth)">More information about events in May</li>
+                <li class = "leftContainerText" onmouseover = "showEvent(anyOtherMonth)" onmouseout = "hideEvent(anyOtherMonth)">More information about events in June</li>
+                <li class = "leftContainerText" onmouseover = "showEvent(anyOtherMonth)" onmouseout = "hideEvent(anyOtherMonth)">More information about events in July</li>
+                <li class = "leftContainerText" onmouseover = "showEvent(anyOtherMonth)" onmouseout = "hideEvent(anyOtherMonth)">More information about events in August</li>
+                <li class = "leftContainerText" onmouseover = "showEvent(anyOtherMonth)" onmouseout = "hideEvent(anyOtherMonth)">More information about events in September</li>
+                <li class = "leftContainerText" onmouseover = "showEvent(anyOtherMonth)" onmouseout = "hideEvent(anyOtherMonth)">More information about events in October</li>
+                <li class = "leftContainerText" onmouseover = "showEvent(anyOtherMonth)" onmouseout = "hideEvent(anyOtherMonth)">More information about events in November</li>
+                <li class = "leftContainerText" onmouseover = "showEvent(anyOtherMonth)" onmouseout = "hideEvent(anyOtherMonth)">More information about events in December</li>
+            </ul>
+        </div>
+    
+        <!--- Details for each month --->
+
+        <div id = "month">
+            <div id = "eventsInJanuary">
+                <img src = "Images/HACK1.jpg" alt = "WEBDESIGN1" width = "400" height = "350">
+                <h3>Events in January:</h3>
+                <p>Form web design groups of 5 people.</p>
+                <p>You will work with these groups for all future society events.</p>
+            </div>
+
+            <div id = "eventsInFebruary">
+                <img src = "Images/HACK2.jpg" alt = "WEBDESIGN2" width = "400" height = "350">
+                <h3>Events in February:</h3>
+                <p>This semesters' challenge is to create a 10-page website.</p>
+                <p>The event this month is to create a mock-up design using figma.</p>
+            </div>
+
+            <div id = "eventsInMarch">
+                <img src = "Images/HACK3.jpg" alt = "WEBDESIGN3" width = "400" height = "350">
+                <h3>Events in March:</h3>
+                <p>I don't know</p>
+            </div>
+
+            <div id = "eventsInApril">
+                <img src = "Images/HACK4.jpg" alt = "WEBDESIGN4" width = "400" height = "350">
+                <h3>Events in April:</h3>
+                <p>The final challenge! Each group must present a functioning 10-page website.</p>
+                <p>The website must make use of HTML, CSS, JavaScript </p>
+                <p>and any appropriate frameworks (e.g. Bootstap, Unsemantic)</p>
+            </div>
+
+            <div id = "anyOtherMonth">
+                <img src = "Images/HACK5.jpg" alt = "WEBDESIGN5" width = "400" height = "350">
+                <h3>Events this month:</h3>
+                <strong>No events!</strong> We're done.
+            </div>
+        </div>
+
+        <!--- Footer --->
+
+        <footer>
+            <p>Jake McMillan 2108868</p>
+            <mark><a href = "CM1114 - Design Page.html">Design</a></mark>
+        </footer>
+
+    </body>
+
+</html>

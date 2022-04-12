@@ -1,0 +1,100 @@
+
+<!--- Jake McMillan 2108868 --->
+
+<html>
+    <head>
+        <link rel = "stylesheet" href = "style/groupprojectstylesheet.css" type = "text/css">
+        <title>Design</title>
+    </head>
+    
+    <body>
+
+        <!--- JavaScript --->
+
+        <script>
+            function showText(text){
+                var x = text
+                if (x.style.display === "none"){
+                    x.style.display = "block"
+                } else {
+                    x.style.display = "none"
+                }    
+            }
+
+            function removeHint(hint){
+                var x = hint
+                x.style.display = "none";
+            }
+        </script>
+
+        <!--- Navigation Bar --->
+
+        <nav>
+            <ul>
+                <a href = "http://eelslap.com/"> <li class = "navBarElements" >Home</li> </a>
+                <a href = "http://eelslap.com/"> <li class = "navBarElements">Shop</li> </a>
+                <a href = "http://eelslap.com/"> <li class = "navBarElements">Our Portfolio</li> </a>
+                <a href = "http://eelslap.com/"> <li class = "navBarElements">Gallery</li></a>
+                <a href = "http://eelslap.com/"> <li class = "navBarElements">Contact Us</li> </a>
+            </ul> 
+        </nav>
+
+        <!--- Title --->
+
+        <br>
+
+        <div class = "title">
+            <h1>WEB DESIGN BASICS</h1>
+        </div>
+
+        <br>
+
+        <!--- First Content Section --->
+            
+        <div class = "blackBar">
+            <iframe style = "border-left: 3px solid white; border-right: 3px solid white;" src="https://www.youtube.com/embed/Nk-K7kJ6jeg" id = "barContent1" alt = "Web Design Video 1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class = "contentFormatting">
+                <h2 class = "titleText" onclick = "showText(webDesignBasics), removeHint(userHint)">What we do</h2>
+                <p style = "color : white;" id = "userHint">Click title for information</p>
+                <blockquote id = "webDesignBasics">
+                    <p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+                    <cite><a href = "https://en.wikipedia.org/wiki/HTML">Wikipedia</a></cite>
+                </blockquote>
+            </div>
+        </div>
+
+        <!--- Second Content Section --->
+
+        <div class = "blackBar"> 
+            <iframe style = "border-left: 3px solid white; border-right: 3px solid white;" src="https://www.youtube.com/embed/HtTUsOKjWyQ" id = "barContent2" alt = "Web Design Video 2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class = "contentFormatting">
+                <h2 class = "titleText" onclick = "showText(applicationsOfWebDesign)">Why you should care</h2>     
+                <blockquote id = "applicationsOfWebDesign">
+                    <p>Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p>
+                    <cite><a href = "https://en.wikipedia.org/wiki/HTML">Wikipedia</a></cite>
+                </blockquote>
+            </div>
+        </div>
+
+        <!--- Third Content Section --->
+            
+        <div class = "BlackBar">
+            <iframe style = "border-left: 3px solid white; border-right: 3px solid white;" src="https://www.youtube.com/embed/qbWqXKN3m3c" id = "barContent3" alt = "Web Design Video 3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class = "contentFormatting">
+                <h2 class = "titleText" onclick = "showText(joiningTheSociety)">How to get involved</h2>
+                <p id = "joiningTheSociety">You should join our society.</p>
+            </div>
+        </div>
+        
+        <br>
+
+        <!--- Footer --->
+
+        <footer>
+            <p>Jake McMillan 2108868</p>
+            <mark><a href = "CM1114 - Events Page.html">Events</a></mark>
+        </footer>
+
+    </body>
+
+</html>

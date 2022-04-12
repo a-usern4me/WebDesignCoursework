@@ -1,0 +1,104 @@
+<!-- Home Page HTML written by Darren Paxton 2115223 -->
+
+<html>
+  <head>
+<!--Linking to the home css stylesheet-->
+    <link rel="stylesheet" href="style/home.css" type="text/css">
+    <title>Home Page</title>
+  </head>
+    
+  <main>
+    <header>
+<!-- Creating Nav-Bar with appropriate links-->
+      <nav>
+        <ul style="margin-top: 0px;margin-bottom: 0px;">
+            <a href="index.html"><li class="navBarElements">Home</li></a>
+            <a href="shop.html"><li class="navBarElements">Shop</li></a> <!--CHANGE HERE-->
+            <a href="portfolio.html"><li class="navBarElements">Our Portfolio</li></a>
+            <a href="gallery.html"><li class="navBarElements">Gallery</li></a> <!--CHANGE HERE-->
+            <a href="contact.html"><li class="navBarElements">Contact Us</li></a> <!--CHANGE HERE-->
+        </ul> 
+      </nav>
+    </header>
+  
+<!--Creating 2 columns in the home page-->
+    <div class="homerow">
+<!--Creating first column, containing text and group photo-->
+      <div class="column1">
+        <h2>Welcome to the Web Design Society</h2>
+<!--Random photo off google, not actually us-->
+        <img src="images/WebDesignGroup.png" alt="WebDesign Society Group">
+        <h3>Hello and welcome to the official website for the Web Design Society here at RGU! Here on this web site you can find various pages describing who we are, what we do aswell as how you can get started learning how to create your very own websites</h3>
+        <p>Through combining different elements using HTML, CSS and Javascript you can create a vast variety of cool and interesting web pages from scratch!</p>
+      </div>
+<!--Creating column 2 containing social media links and membership info-->
+      <div class="column2">
+        <h3>Our Links</h3>
+        <p>Where you can follow our business aswell as events we organise!</p>
+<!--Currently have twitter and FB accounts, can easily insert IG and TikTok accounts-->
+        <a href="https://www.facebook.com/RGU-Web-Design-Society-100271559331508">
+        <img src="images/fb.png" alt="Facebook Logo">
+        </a>
+        <a href="https://www.instagram.com/">
+        <img src="images/ig.png" alt="instagram Logo">
+        </a>
+        <a href="https://twitter.com/RguWeb">
+        <img src="images/tw.png" alt="Twitter Logo">
+        </a>
+        <a href="https://www.tiktok.com/">
+        <img src="images/tk.png" alt="TikTok Logo">
+        </a>
+        <div class="membership">
+          
+<!-- Displays different membership prices depending on how long you want-->
+          <h3>Join our Society</h3>
+          <p>There are different membership types based on membership length. Either 1 month or 1 year.</p>
+          <p>Click the options below to see the price of each membership.</p>
+<!--Depending on which button clicked, function is given different data-->
+          <button type="button" onclick='showPrice("price","month")'>1 Month</button>
+          <button type="button" onclick='showPrice("price","year")'>1 Year</button>
+          <p style="font-weight: bold" id="price">Price:</p>
+<!--Link to contact page-->
+          <p>To enquire more about becomming a member of our society, we would love to hear from you. We appreciate any questions you may have for us, you can send us a message in the Contact section of this website.</p>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+    
+<!--Links to pages not on the nav bar-->
+  <div class="internalLinks">
+      <Div class="Link" style="background-color:#a7d4fc">
+        <p><a href="design.html">Basics of Web Design</a></p>
+      </Div>
+      <Div class="Link" style="background-color:#fce5a4">
+        <p><a href="members.html">Current Members</a></p>
+      </Div>
+      <Div class="Link" style="background-color:#a7d4fc">
+        <p><a href="events.html">Society Events</a></p>
+      </Div>
+      <Div class="Link" style="background-color:#fce5a4">
+        <p><a href="news.html">News and Reading</a></p>
+      </Div>
+      <Div class="Link" style="background-color:#a7d4fc">
+        <p><a href="community.html">Community Outreach</a></p>
+      </Div>
+    </div>
+
+
+<!--Javascript stuff-->
+<!--This function brings in the id of the text needed changing and the data of what we want it then say, either Month or Year-->
+  <script>
+
+    function showPrice(id,membership) {
+      var container = document.getElementById(id);
+      if(membership == "month") {
+        container.innerHTML = "Price: £5 Per Month";
+      } else {
+        container.innerHTML = "Price: £50 Per Annum";
+      }
+    }
+  </script>
+  
+  
+  </main>
+</html>

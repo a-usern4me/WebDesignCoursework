@@ -1,0 +1,92 @@
+/*Community Outreach Page CSS written by Darren Paxton 2115223*/
+
+/*This colour is used throughout the website, pleasant colour*/
+body {
+  background-color: salmon;
+  margin: 0px;
+}
+
+/*Creating the nav bar*/
+nav{
+  background-color: black;
+  border-style: solid;
+  height: 50px;
+  margin:0px;
+}
+.navBarElements{
+  color: white;
+
+  text-align: center;
+  font-size: 35px;
+  list-style: none;
+
+  border-left: solid;
+  height: 50px;
+  width:19.68%;
+
+  float: left;
+}
+
+/*Design for the intro text on the community outreach page*/
+.comIntro{
+  background-color: #cccccc;
+  border: solid;
+  border-width:3px;
+  border-color:black;
+  border-radius:25px;
+/*Padding used so text isnt right up against the border*/
+  padding:5px;
+  padding-bottom:15px;
+  text-align:center;
+  font-size:20px;
+  margin-top:20px;
+/*Specific margins used so the intro lines up with the 3 columns*/
+  margin-left:4%;
+  margin-right:20%;
+}
+
+/*Columns have all the same design elements, so can all be done in the same css element*/
+.col1,.col2,.col3 {
+  float: left;
+  width: 20%;
+  margin-left:4%;
+  margin-right:4%;
+  margin-top: 20px;
+  text-align: center;
+  border: solid;
+  border-width:3px;
+  border-color:black;
+  border-radius:25px;
+}
+
+/*Design so images within the columns fit nicely, with appropriate borders and margins*/
+.col1 img, .col2 img, .col3 img {
+  display: block;
+  width:85%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:10px;
+  
+  border: solid;
+  border-width:3px;
+  border-color:black;
+  border-radius:10px;
+}
+
+/*Giving the link to Home-Start a contrasting appearance from the rest of the column*/
+.charitylink h3 {
+  background-color:white;
+  margin:10px;
+  border: solid;
+  border-width:3px;
+  border-color:black;
+  border-radius:10px;
+}
+
+/* Clear floats after the columns */
+.communityrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+

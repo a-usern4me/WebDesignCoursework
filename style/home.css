@@ -1,0 +1,116 @@
+/*Home Page CSS written by Darren Paxton 2115223*/
+
+/*This colour is used throughout the website, pleasant colour*/
+body {
+  background-color: salmon;
+  margin: 0px;
+}
+
+/*Creating the nav bar*/
+nav{
+  background-color: black;
+  border-style: solid;
+  height: 50px;
+  margin:0px;
+
+  
+}
+.navBarElements{
+  color: white;
+
+  text-align: center;
+  font-size: 35px;
+  list-style: none;
+
+  border-left: solid;
+  height: 50px;
+  width:19.68%;
+
+  float: left;
+}
+
+/*Creating 2 columns, of unequal size as the right one is a side tile and the main one should be larger*/
+/*Used % instead of px for width so the page can be resizes and not lose too much of the appearance*/
+.column1 {
+  float: left;
+  width: 65%;
+  margin:10px;
+  background-color: #cccccc;
+  text-align: center;
+}
+
+/*Only difference to column one is the width*/
+.column2 {
+  float: left;
+  width: 25%;
+  margin:10px;
+  background-color: #cccccc;
+  text-align: center;
+
+}
+
+/* Clear floats after the columns */
+.homerow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Design for the group photo in column 1, so it is very prominent in the first column. With a black border to emphasise it*/
+.column1 img {
+  display: block;
+  width:85%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:10px;
+  
+  border: solid;
+  border-width:3px;
+  border-color:black;
+  border-radius:10px;
+}
+
+/*Designs for the 4 social media images, the size adjusted so they all fit in the column*/
+.column2 img {
+  float: left;
+  display: block;
+  width:20%;
+  margin-left:1%;
+  margin-right:1%
+}
+
+/*Lowers opacity of each image when hovered over, to show they are links*/
+.column2 img:hover {
+  opacity: 0.5;
+}
+
+/* Clear floats after the social media links */
+.membership {
+  clear:both;
+}
+
+/*Allowing the 5 links to sit side by side and fit on the page*/
+.Link{
+  float:left;
+  width: 15%;
+  margin:1%;
+  height: 75px;
+  padding:10px;
+  border-radius: 25px;
+}
+
+/*Gives the links a different look to the default link appearance*/
+.Link a{
+  color: black;
+  font-weight: bold;
+  
+}
+.Link p{
+  text-align: center;
+}
+
+/*Lowers opacity of each link when hovered over, to show they are links*/
+.Link:hover {
+  opacity: 0.5;
+}
+

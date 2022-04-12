@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  body{
+    background: #FF9494;
+    font-family: 'Rhodium Libre', serif;
+    margin: 0px;
+    padding: 0px;
+    min-height: 750px;
+    min-width: 1380px
+  }
+  
+nav{
+    background-color: black;
+    border-style: solid;
+    height: 50px;
+    margin:0px; 
+}
+
+.navBarElements{
+    color: white;
+
+    text-align: center;
+    font-size: 35px;
+    list-style: none;
+
+    border-left: solid;
+    height: 50px;
+    width:19.68%;
+
+    float: left;
+}
+  
+  
+  a.active, a:hover{
+    background: #d9afaf;
+    transition: .5s;
+  }
+  
+  b:hover{
+    background: #d9afaf;
+    transition: .5s;
+  }
+  
+  c:hover{
+    background: #d9afaf;
+    transition: .5s;
+  }
+  
+  h1{
+    margin: 0 40px;
+    font-size: 46px;
+    line-height: 120px;
+  }
+  
+  #firstPic
+  {
+    position: absolute;
+    width: 750px;
+    height: 600px;
+    margin: 0 30px;
+    top: 25%;
+  }
+  
+  
+  #secondPic
+  {
+    position: absolute;
+    right: 2%;
+    width: 750px;
+    height: 600px;
+    top: 25%;
+  }
+  
+  #thirdPic
+  {
+    position: absolute;
+    width: 750px;
+    height: 600px;
+    right: 59%;
+    top: 115%;
+  
+  }
+  
+  #fourthPic
+  {
+    position: absolute;
+    width: 750px;
+    height: 600px;
+    right: 2%;
+    top: 115%;
+  }
+  
+  .text1
+  {
+    position: absolute;
+    max-width: 600px;
+    top: 97%;
+    right: 64%;
+  }
+  
+  .text2
+  {
+    position: absolute;
+    max-width: 600px;
+    top: 97%;
+    right: 5%;
+  }
+  
+  .text3
+  {
+    position: absolute;
+    max-width: 600px;
+    top: 185%;
+    right: 64%;
+  }
+  
+  .text4
+  {
+    position: absolute;
+    max-width: 600px;
+    top: 185%;
+    right: 5%;
+  }
+  
+  .vert-line
+  {
+     width: 3px;
+    height: 1830px;
+    background-color: black;
+    position: absolute;
+    top: 10%;
+  right: 50%;
+  }
+  
+  .footer
+  {
+    position: absolute;
+    align: center;
+    top: 200%;
+  }

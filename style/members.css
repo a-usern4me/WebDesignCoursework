@@ -1,0 +1,56 @@
+* {box-sizing: border-box;}
+body {
+    background-color: salmon;
+    margin:0px;
+}
+nav{
+    background-color: black;
+    border-style: solid;
+    height: 50px;
+    margin:0px; 
+}
+
+.navBarElements{
+    color: white;
+
+    text-align: center;
+    font-size: 35px;
+    list-style: none;
+
+    border-left: solid;
+    height: 50px;
+    width:19.68%;
+
+    float: left;
+}
+
+.header h1{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;;
+    text-align: center;
+}
+
+.teamphotoleft{
+    float:left;
+    width: 50%;
+}
+.teamphotoright{
+    float:right;
+    width: 50%;
+}
+
+.teamphotoleft img {
+    border-radius: 50%;
+    size: 30px;
+    padding: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.teamphotoright img {
+    border-radius: 50%;
+    size: 30px;
+    padding: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
